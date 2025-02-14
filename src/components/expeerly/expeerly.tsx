@@ -154,7 +154,7 @@ export class ExpeerlyComponent {
 
          {/* The reviews themselves in a horizontal scroll */}
          <div style={{ display:'flex', gap:'16px', overflowX:'auto' }}>
-             {reviews.map((r) => this.renderReviewItem(r)).join("")}
+             {reviews.map((r) => this.renderReviewItem(r))}
          </div>
 
          {/* Footer text */}

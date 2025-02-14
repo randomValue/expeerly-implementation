@@ -23,7 +23,7 @@
     <script>
       setTimeout(()=>{
         const expeerlyElement = document.createElement('expeerly-component');
-        expeerlyElement.setAttribute('type', 'carousel'); 
+        expeerlyElement.setAttribute('type', 'badge'); 
         expeerlyElement.setAttribute('gtin', 'B0CSDCSN8H'); 
         expeerlyElement.setAttribute('theme', 'dark'); 
         expeerlyElement.setAttribute('max', '4'); 
@@ -31,6 +31,17 @@
         document.body.appendChild(expeerlyElement);
 
       },1500)
+
+      setTimeout(()=>{
+        const expeerlyElement = document.createElement('expeerly-component');
+        expeerlyElement.setAttribute('type', 'reviewblock'); 
+        expeerlyElement.setAttribute('gtin', 'B0CSDCSN8H'); 
+        expeerlyElement.setAttribute('theme', 'dark'); 
+        expeerlyElement.setAttribute('max', '4'); 
+
+        document.body.appendChild(expeerlyElement);
+
+      },3000)
     </script>
   </body>
 </html>
