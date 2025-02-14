@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/expeerly-implementation.esm.js"></script>
+    <script nomodule src="/build/expeerly-implementation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mux/mux-player"></script>
+
+  </head>
+  <body>
+    <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
+    <expeerly-component
+      type="carousel"
+      gtin="B0CSDCSN8H"
+      theme="light"
+      max="4"
+    >
+    </expeerly-component>
+
+    <script>
+      setTimeout(()=>{
+        const expeerlyElement = document.createElement('expeerly-component'); // Replace with actual tag name
+        expeerlyElement.setAttribute('type', 'carousel'); // Set any attributes needed
+        expeerlyElement.setAttribute('gtin', 'B0CSDCSN8H'); // Set any attributes needed
+        expeerlyElement.setAttribute('theme', 'dark'); // Set any attributes needed
+        expeerlyElement.setAttribute('max', '4'); // Set any attributes needed
+
+        document.body.appendChild(expeerlyElement); // Append to the container
+
+      },1500)
+    </script>
+  </body>
+</html>
